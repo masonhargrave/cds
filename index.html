@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BMJ Clinical Guidelines Query</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 50px;
+      }
+      #response {
+        margin-top: 20px;
+        white-space: pre-wrap; /* Preserve line breaks */
+      }
+      #loading {
+        display: none;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BMJ Clinical Guidelines Query</h1>
+    <label for="query">Enter your question:</label><br /><br />
+    <textarea
+      id="query"
+      rows="4"
+      cols="50"
+      placeholder="Type your question here..."
+    ></textarea
+    ><br /><br />
+    <button id="submit">Submit</button>
+    <p id="loading">Loading...</p>
+    <div id="response"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
